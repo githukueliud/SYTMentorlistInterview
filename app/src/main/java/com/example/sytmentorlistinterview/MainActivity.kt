@@ -53,7 +53,7 @@ class MainActivity : ComponentActivity() {
 @Composable
 fun HomeScreen(modifier: Modifier = Modifier) {
     Column(
-        modifier = Modifier.fillMaxSize().testTag("CardComponent"),
+        modifier = Modifier.fillMaxSize(),
         verticalArrangement = Arrangement.Center,
         horizontalAlignment = Alignment.CenterHorizontally
     ){
@@ -78,7 +78,7 @@ fun HomeScreen(modifier: Modifier = Modifier) {
 
 @Composable
 fun CardComponent(
-    //modifier: Modifier = Modifier.testTag("CardComponent"),
+    modifier: Modifier = Modifier,
     text: String
 ) {
 
@@ -92,7 +92,7 @@ fun CardComponent(
             )
         ) {
             Column(
-                modifier =  Modifier.fillMaxSize(),
+                modifier =  Modifier.fillMaxSize().testTag("CardComponent"),
                 horizontalAlignment = Alignment.CenterHorizontally,
                 verticalArrangement = Arrangement.Center
             ){

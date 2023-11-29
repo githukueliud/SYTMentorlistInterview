@@ -29,7 +29,7 @@ class UiTest {
 
         //check if both cards are displayed
         composeTestRule.onAllNodesWithTag("CardComponent")
-            .assertCountEquals(1)
+            .assertCountEquals(2)
     }
 
     @Test
